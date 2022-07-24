@@ -52,14 +52,42 @@ main {
 }
 
 hr {
-    position: absolute;
-    width: 807px;
-    height: 0px;
+    /* position: absolute; */
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 
 /* top-blog */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+}
+
+.blog {
+    display: flex;
+}
+
 .blog .thumbnail img {
     width: 177px;
     height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.author {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.author a {
+    text-decoration: none;
+    color: #562EFF;
 }
